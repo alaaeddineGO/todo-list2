@@ -1,0 +1,58 @@
+//font-family
+$f-fp:"Playwrite BE VLG", cursive;
+$f-fr:"Rubik", sans-serif;
+//color
+$clr-primary: #91ff00;
+$clr-secandry: #f0f8ff;
+$clr-whiht: #ffffff;
+//value default
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+    height: 30px;
+    padding: 2px 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: $f-fr;
+}
+button{
+    outline: none;  
+    height: 35px;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+//mixin
+@mixin font($f-f,$f-s,$f-w){
+    font-family: $f-f;
+    font-size: $f-s;
+    font-weight: $f-w;
+    font-style: normal;
+}
+@mixin fcc{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+@mixin fcs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+@mixin fss{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
